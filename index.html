@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta property="og:title" content="فتح صندوق بوكو إف 3 | Poco F3 Unboxing">
+        <meta property="og:type" content="video.movie" />
+        <meta property="og:image" content="https://img.youtube.com/vi/VqrUt9h6hjM/maxresdefault.jpg">
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="فتح علبة بوكو اف 3 والتعرف على محتوياتها..
+خلال يومين رح اعمل فيديو انطباع أولي عن الموبايل.. والمراجعة خلال اسبوعين...
+لا تنسو الاشتراك بالقناة">
+        <meta property="og:url" content="https://youtube.com/watch?v=VqrUt9h6hjM">
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+
+                var desktopFallback = "https://youtube.com/watch?v=VqrUt9h6hjM",
+                mobileFallback = "https://youtube.com/watch?v=VqrUt9h6hjM",
+                app = "vnd.youtube://lRcaW8ZyNug";
+
+                if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+                    window.location = app;
+                    window.setTimeout(function() {
+                        window.location = mobileFallback;
+                    }, 25);
+                } else {
+                    window.location = desktopFallback;
+                }
+
+                function killPopup() {
+                    window.removeEventListener('pagehide', killPopup);
+                }
+
+                window.addEventListener('pagehide', killPopup);
+
+            };
+        </script>
+    </body>
+</html>
